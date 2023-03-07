@@ -3,7 +3,7 @@ const cors = require('cors');
 const api = require('./api');
 const app = express();
 
-app.use(cors({ origin: 'https://workout-frontend.vercel.app/' }));
+app.use(cors({ origin: 'workout-frontend.vercel.app' }));
 
 app.use(express.json());
 

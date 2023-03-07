@@ -21,7 +21,7 @@ exports.generatePlan = async (req, res) => {
     console.log(error);
     res.status(400).json({
       status: 'fail',
-      error,
+      message: error.message,
     });
   }
 };
